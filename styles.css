@@ -1,0 +1,131 @@
+body {
+    background-image: url("images/background2.jpg");
+    background-size:cover;
+    /* background-color: #070A52; */
+    text-shadow: black 1px 1px;
+}
+.middleline {
+  height: 5px;
+  background-color:#FFFEC4;
+  width: 100%;
+}
+a {
+    text-decoration: none;
+}
+p {
+    color: #FFFEC4;
+    font-size: 60px;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #FF9B9B;
+   
+}
+h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #FFD6A5;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #FFD6A5;
+}
+div {
+    line-height: 30px;
+    text-align: center;
+}
+ol { 
+    color: #CBFFA9;
+    text-align: center;
+    font-size: 30px;
+    /* border-width: 4px;
+    border-style: solid;
+    border-color: crimson; */
+    border: 4px solid burlywood;
+}
+li {
+    list-style: disc inside;
+  
+}
+span {
+    text-align: center;
+    color: #816c2c;
+    text-shadow: none;
+    font-weight: bold;
+
+}
+form {
+   
+    background-color: #FF9B9B;
+    margin: 200px
+}
+label
+    {   
+    text-shadow: none;
+    font-size: 30px;
+}
+input[type="submit"] {
+    color: black;
+    font-size: 30px;
+   
+}
+
+  
+
+.char-preview-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+ 
+}
+    
+
+.char-preview {
+    border: solid black 1px;
+    border-radius: 20px;
+    background-color: #ddcd9c;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+}
+.char-name h2 {
+    color: #816c2c;
+
+} 
+
+
+.topics {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.char-attr {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+}
+
+.char-preview-button {
+    color: #bbbbcb;
+    /* width: 300px; */
+    font-weight: bold;
+    border: solid black 1px;
+    border-radius: 20px;
+    background-color: #ac9054;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}

@@ -1,0 +1,273 @@
+body {
+    background-image: url("images/background3.jpg");
+    /* background-repeat: no-repeat; */
+
+}
+
+
+h1 {
+    
+    background-color: white;
+    text-align: center;
+    /* opacity: 0.7; */
+    border: black 3px solid;
+}
+.character-sheet {
+    border: 3px solid black;
+    background-color: rgba(255, 202, 204, 0.671); 
+
+}
+.character-sheet textarea {
+ 
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.header {
+    display: flex;
+    border-bottom: 3px solid black;
+    background-color: rgba(212, 226, 212, 0.671);
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 50px;
+
+}
+.char-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex:1;
+    font-size: 30px;
+    padding: 20px;
+}
+.char-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
+.char-details-top {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.char-details-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.main-sheet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border: 3px black solid; */
+   
+}
+.left-attr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.middle-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* text-align: right; */
+}
+
+.middle-skills textarea {
+    margin: 5px;
+}
+
+.inspiration {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+    font-size: 30px;
+}
+.proficiency {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+}
+.saving-throws {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    padding: 5px;
+}
+
+
+
+.save {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+
+
+}
+.save textarea {
+    width: 43px; height: 23px;
+}
+
+.areatitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+.skills-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+    /* border: 1px black solid; */
+}
+.skill
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+
+.skill textarea {
+  
+    width: 43px; height: 23px;
+    
+}
+
+.right-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    /* justify-content: space-evenly; */
+}
+.top-right-details-block {
+    display: flex;
+    flex-direction: column;
+
+}
+.AC-INIT-SPEED {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin: 30px;
+    /* border: 1px solid black; */
+}
+.AC {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+.init {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+.speed {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+.hp-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* border: 1px black solid; */
+    margin-bottom: 30px;
+}
+.maxhp {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+.maxhp label {
+    margin-right: 10px;
+}
+.temphp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin: 10px;
+    padding: 10px;
+}
+
+.HD-DS {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-around;
+
+}
+.HD {
+    display: flex;
+    flex-direction: column;
+}
+.HD span {
+    margin-top: 25px;
+}
+.DS {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.failures {
+    margin: 10px;
+}
+.atk-spells {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    /* border: 1px black solid; */
+    padding: 10px;
+}
+.wepname {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.atkbonus {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.dmg-type {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.equipment {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+.saves-aftertext {
+    opacity: 0.5;
+}

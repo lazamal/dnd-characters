@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+    <html>
+            <head>
+                <link rel="stylesheet" href="styles.css">
+                <title>
+                    Character Creator
+                </title>
+            </head>
+            <body>
+                
+                <a href="index.html">
+               <button> Back </button>
+                 </a>
+                <h1 id="page-title">
+                    Are you excited to start creating your character? <br> So are we!
+                </h1>
+                <h2>
+                    Lets get you started!
+                </h2>
+                <!-- character creation form -->
+            
+                <form id="char-generator-form">
+                    <label for="players-name">Player's Name</label>
+                    <input type="text" id="players-name" placeholder="your Name">
+                    <br><br>
+
+                <!-- name -->
+                    <label for="character_name">Character name:</label>
+                    <input type="text" id="character_name" name="character_name" placeholder="Character name"  >
+                    <br><br>
+
+                <!-- age -->
+                    <label for="age">Character age</label>
+                    <select name="age" id="age">
+                        <option value="none">None</option>
+                        <option value="child">Child</option>
+                        <option value="adolescent">Adolescent</option>
+                        <option value="young">Young</option>
+                        <option value="Grown-up">Grown-up</option>
+                        <option value="middle-aged">middle-aged</option>
+                        <option value="Old">Old</option>
+                    </select>
+                 <br><br>
+
+                <!-- race -->
+                <label for="age">Character race</label>
+                <select name="race" id="race">
+                    <option value="none">None</option>
+                    <option value="Human">Human</option>
+                    <option value="Elf">Elf</option>
+                    <option value="Half-elf">Half-elf</option>
+                    <option value="Gnome">Gnome</option>
+                    <option value="Halfling">Halfling</option>
+                    <option value="Dwarf">Dwarf</option>
+                    <option value="Half-orc">Half-orc</option>
+                    <option value="Dragonborn">Dragonborn</option>
+                    <option value="Tiefling">Tiefling</option>
+                </select>
+                <br><br>
+                <!-- class -->
+                
+                    <label for="classes">Select your Class:</label>
+                    <select name="classes" id="classes">
+                        <option value="none">None</option>
+                        <option value="Barbarian">Barbarian</option>
+                        <option value="Bard">Bard</option>
+                        <option value="Cleric">Cleric</option>
+                        <option value="Druid">Druid</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Monk">Monk</option>
+                        <option value="Paladin">Paladin</option>
+                        <option value="Ranger">Ranger</option>
+                        <option value="Rogue">Rogue</option>
+                        <option value="Sorcerer">Sorcerer</option>
+                        <option value="Warlock">Warlock</option>
+                        <option value="Wizard">Wizard</option>
+                    </select>
+                    <br><br><br><br>
+                
+
+  <!-- Roll Attributes -->
+  <label for="Attributes"><strong>Attributes</strong></label>
+  <br><br>
+  <!-- ROLL STR -->
+  <label for="STR">Strength</label>
+  <input type="number" id="STR" max="18">
+  <button type="button" id="AtrButton" onclick=RollAttr('STR')>Roll for STR</button>
+  <br><br>
+  <!-- ROLL DEX -->
+  <label for="DEX">Dexterity</label>
+  <input type="number" id="DEX" max="18">
+  <button type="button" id="AtrButton" onclick=RollAttr('DEX')>Roll for DEX</button>
+  <br><br>
+  <!-- ROLL CON -->
+  <label for="CON">Constitution</label>
+  <input type="number" id="CON" max="18">
+  <button type="button" id="AtrButton" onclick=RollAttr('CON')>Roll for CON</button>
+  <br><br>
+
+   <!-- ROLL INT -->
+   <label for="INT">Inteligence</label>
+   <input type="number" id="INT" max="18">
+   <button type="button" id="AtrButton" onclick=RollAttr('INT')>Roll for INT</button>
+   <br><br>
+
+    <!-- ROLL WIS -->
+    <label for="WIS">Wisdom</label>
+    <input type="number" id="WIS" max="18">
+    <button type="button" id="AtrButton" onclick=RollAttr('WIS')>Roll for WIS</button>
+    <br><br>
+
+    <!-- ROLL CHA -->
+    <label for="CHA">Charisma</label>
+    <input type="number" id="CHA" max="18">
+    <button type="button" id="AtrButton" onclick=RollAttr('CHA')>Roll for CHA</button>
+    <br><br><br><br>
+    
+    <!-- Roll Hp -->
+    <label for=""hitpoints">Hitpoints</label>
+    <input type="text" id="hp" readonly>
+    <button type="button" id="HpButton" onclick=HPDiceroll(12,1)>Roll for HP</button>
+    <br><br>            
+
+                <!-- background -->
+                    <label for="background">Select your background:</label>
+                    <select name="background" id="background">
+                        <option value="none">None</option>
+                        <option value="Acolyte">Acolyte</option>
+                        <option value="Anthropologist">Anthropologist</option>
+                        <option value="Archaelogist">Archaelogist</option>
+                        <option value="Adopted">Adopted</option>
+                        <option value="Astral Drifter">Astral Drifter</option>
+                        <option value="Criminal/spy">Criminal/spy</option>
+                        <option value="Entertainer">Entertainer</option>
+                        <option value="Folk Hero">Folk Hero</option>
+                        <option value="Gladiator">Gladiator</option>
+                        <option value="Guild Merchant">Guild Merchant</option>
+                        <option value="Hermit">Hermit</option>
+                        <option value="Knight">Knight</option>
+                        <option value="Noble">Noble</option>
+                        <option value="Outlander">Outlander</option>
+                        <option value="Pirate">Pirate</option>
+                        <option value="Sage">Sage</option>
+                        <option value="Sailor">Sailor</option>
+                        <option value="Soldier">Soldier</option>
+                        <option value="Urchin">Urchin</option>
+                    </select>
+                    <br><br>
+
+
+                <!-- Equipment packs -->
+                <label for="Equipment packs">Choose your starting equipment:</label>
+                    <select name="EquipmentStart" id="EquipmentStart">
+                        <option value="none">None</option>
+                        <option value="Burglar's">Burglar's Pack (16 gp)</option>
+                        <option value="Diplomat's">Diplomat's Pack (39 gp)</option>
+                        <option value="Dungeoneer's">Dungeoneer's Pack (12 gp)</option>
+                        <option value="Entertainer's">Entertainer's Pack (40 gp)</option>
+                        <option value="Explorer's">Explorer's Pack (10 gp)</option>
+                        <option value="Priest's">Priest's Pack (19 gp)</option>
+                        <option value="Scholar's">Scholar's Pack (40 gp)</option>
+                    </select>    
+                    <br><br>
+
+                
+
+                <!-- personality -->
+                <label for="personality">Personality traits</label>
+                <input type="text">
+                <br><br>
+
+              
+               <!--origin -->
+               
+               <label for="custom_backstory">Character's origin story:</label><br>
+               <textarea name="custom_backstory" id="origin" cols="30" rows="10" placeholder="it all started when..."></textarea>
+               <br>
+               <!-- char lvl -->
+               <label for="character_lvl">Character level:</label>
+               <input type="number" min=" 1" max="20" id="lvl">
+               <br><br>
+
+                <!-- submit -->
+                <input type="submit" placeholder="submit">
+                <br><br>
+                
+
+
+                </form>    
+                
+                <script src="generator_js.js"> </script>
+            </body>
+            
+    </html>

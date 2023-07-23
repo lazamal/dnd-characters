@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles_sheet.css">
+        <title>
+            character sheet
+        </title>
+    </head>
+    <body>
+        <a href="index.html">
+            <button>back</button>
+        </a>
+        <div>
+            <h1>
+                Character sheet
+            </h1>
+        </div>
+        <!-- entire sheet -->
+        <div class="character-sheet">        
+        <!-- this is the header -->
+            <div class="header">
+            <!-- this is the left section of the header -->
+                <div class="char-name">
+                    <textarea id="char-name"></textarea><br>
+                    <label for="char-name">Character name</label>
+                </div>
+            <!-- this is the right section of the header -->
+                <div class="char-details">
+                    <div class="char-details-top">
+                        <div class="char-class">
+                            <textarea id="char-class"></textarea><br>
+                            <label for="char-class">Class</label>
+                            
+                        </div>
+                        <div class="char-race">
+                            <textarea id="char-race"></textarea><br>
+                            <label for="char-race">Race</label>
+                            
+                        </div>
+                        <div class="player-name">
+                            <textarea id="player-name"></textarea><br>
+                            <label for="player-name">Player's name</label>
+                            
+                        </div>
+                    </div>
+                    <div class="char-details-bottom">
+                        <div class="char-lvl">
+                            <textarea id="char-lvl"></textarea><br>
+                            <label for="char-lvl">Level</label>
+                           
+                        </div>
+                        <div class="char-age">
+                            <textarea id="char-age"></textarea><br>
+                            <label for="char-age">Age</label>
+                           
+                        </div>
+                        <div class="background">
+                            <textarea id="background"></textarea><br>
+                            <label for="Background">Background</label>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- this is the main area of the character sheet -->
+            <div class="main-sheet">
+                <!-- this is the left attribute area -->
+                <div class="left-attr">
+                    <div class="attr">
+                        <label for="str">Strength</label><br>
+                        <textarea rows="10" id="Strength"></textarea>
+                    </div>
+                    <div class="attr">
+                        <label for="dex">Dexterity</label><br>
+                        <textarea rows="10" id="Dexterity"></textarea>
+                    </div>
+                    <div class="attr">
+                        <label for="con">Constitution</label><br>
+                        <textarea rows="10" id="Constitution"></textarea>
+                    </div>
+                    <div class="attr">
+                        <label for="int">Inteligence</label><br>
+                        <textarea rows="10" id="Inteligence"></textarea>
+                    </div>
+                    <div class="attr">
+                        <label for="wis">Wisdom</label><br>
+                        <textarea rows="10" id="Wisdom"></textarea>
+                    </div>
+                    <div class="attr">
+                        <label for="cha">Charisma</label><br>
+                        <textarea rows="10" id="Charisma"></textarea>
+                    </div>
+                </div>
+                <!-- this is the middle section -->
+                <div class="middle-skills">
+                    <!-- this is inspiration -->
+                    <div class="inspiration">
+                        <div>
+                        <textarea id="inspiration"></textarea>
+                        </div>
+                        <div>
+                        <label for="inspiration">Inspiration</label>
+                        </div>
+                    </div>
+                    <!-- this is proficiency -->
+                    <div class="proficiency">
+                        <div>
+                            <textarea id="proficiency"></textarea>
+                        </div>
+                        <div>
+                        <label for="proficiency">Proficiency</label>
+                        </div>
+                    </div>
+                    <!-- this is saving throws -->
+                    <div class="saving-throws">
+                        <div class="save">
+                            <input type="checkbox">
+                            <textarea id="str-save"></textarea>
+                            <label for="str-save">Strength</label>
+                        </div>
+                        <div class="save">
+                            <input type="checkbox">
+                            <textarea id="dex-save"></textarea>
+                            <label for="skill">Dexterity</label>
+                        </div>
+                        <div class="save">
+                            <input type="checkbox">
+                            <textarea id="con-save"></textarea>
+                            <label for="skill">Constitution</label>
+                        </div>
+                        <div class="save">
+                            <input type="checkbox">
+                            <textarea id="int-save"></textarea>
+                            <label for="skill">Inteligence</label>
+                        </div>
+                        <div class="save">
+                            <input type="checkbox">
+                            <textarea id="wis-save"></textarea>
+                            <label for="skill">Wisdom</label>
+                        </div>
+                        <div class="save">
+                            <input type="checkbox">
+                            <textarea id="cha-save"></textarea>
+                            <label for="skill">Charisma</label>
+                        </div>
+                        <div class="areatitle">
+                            <span>Saving-throws</span>
+                        </div>
+                    </div>
+                    <!-- this is the skills area -->
+                    <div class="skills-detail">
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="dex-skill"></textarea>
+                            <label for="skill">Acrobatics <span class="saves-aftertext">(Dex)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="cha-skill"></textarea>
+                            <label for="skill">Animal Handling <span class="saves-aftertext">(Cha)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="int-skill"></textarea>
+                            <label for="skill">Arcana <span class="saves-aftertext">(Int)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="cha-skill"></textarea>
+                            <label for="skill">Deception <span class="saves-aftertext">(Cha)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="int-skill"></textarea>
+                            <label for="skill">History <span class="saves-aftertext">(Int)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="wis-skill"></textarea>
+                            <label for="skill">insight <span class="saves-aftertext">(Wis)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="cha-skill"></textarea>
+                            <label for="skill">Intimidation <span class="saves-aftertext">(Cha)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="int-skill"></textarea>
+                            <label for="skill">Invastigation <span class="saves-aftertext">(Int)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="int-skill"></textarea>
+                            <label for="skill">Medicine <span class="saves-aftertext">(Int)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="wis-skill"></textarea>
+                            <label for="skill">Nature <span class="saves-aftertext">(Wis)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="wis-skill"></textarea>
+                            <label for="skill">Perception <span class="saves-aftertext">(Wis)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="cha-skill"></textarea>
+                            <label for="skill">Performance <span class="saves-aftertext">(Cha)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="cha-skill"></textarea>
+                            <label for="skill">Persuasion <span class="saves-aftertext">(Cha)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="int-skill"></textarea>
+                            <label for="skill">Religion <span class="saves-aftertext">(Int)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="dex-skill"></textarea>
+                            <label for="skill">Sleight of Hand <span class="saves-aftertext">(Dex)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="dex-skill"></textarea>
+                            <label for="skill">Stealth <span class="saves-aftertext">(Dex)</span></label>
+                        </div>
+                        <div class="skill">
+                            <input type="checkbox">
+                            <textarea class="wis-skill"></textarea>
+                            <label for="skill">survival <span class="saves-aftertext">(Wis)</span></label>
+                        </div>
+                        <div class="areatitle">
+                            <span>Skills</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-details">
+                    <div class="top-right-details-block">
+                        <div class="AC-INIT-SPEED">
+                            <div class="AC">
+                                <textarea id="AC"></textarea>
+                                <label for="AC">Armor Class</label>
+                            </div>
+                            <div class="init">
+                                <textarea id="init"></textarea>
+                                <label for="init">Initiative</label>
+                            </div>
+                            <div class="speed">
+                                <textarea id="speed"></textarea>
+                                <label for="speed">Speed</label>
+                            </div>
+                         </div>
+                        <div class="hp-container">
+                            <div class="maxhp">
+                                <label for="maxhp">Hitpoint Maximum</label>
+                                <textarea  name="" id="maxhp" cols="30" rows="2"></textarea>
+                            </div>
+                            <div class="currenthp">
+                                <textarea name="" id="currenthp" cols="50" rows="3"></textarea>
+                            </div>
+                            <div class="currenthp-title">
+                                <span>Current Hit Points</span>
+                            </div>
+                        </div>
+                        <div class="temphp-container">
+                            <textarea id="temphp"></textarea>
+                            <span>Temporary Hit Points</span>
+                        </div>
+                        <div class="HD-DS">
+                            <div class="HD">
+                                <textarea id="HD"></textarea>
+                                <span>Hit Die</span>
+                            </div>
+                            <div class="DS">
+                                <div class="successes">
+                                    <label for="successes">successes</label>
+                                    <input type="checkbox">
+                                    <input type="checkbox">
+                                    <input type="checkbox">
+                                </div>
+                                <div class="failures">
+                                    <label for="failures">failures</label>
+                                    <input type="checkbox">
+                                    <input type="checkbox">
+                                    <input type="checkbox">
+                                </div>
+                            <span>Death Saves</span>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="atk-spells">
+                        <div class="wepname">
+                            <label for="wepname">Weapon name</label>
+                            <textarea name="" id="1wep" cols="30" rows="3"></textarea>
+                            <textarea name="" id="2wep" cols="30" rows="3"></textarea>
+                            <textarea name="" id="3wep" cols="30" rows="3"></textarea>
+                        </div>
+                        <div class="atkbonus">
+                            <label for="atkbonus">Attack Bonus</label>
+                            <textarea name="" id="1wepatk" cols="30" rows="3"></textarea>
+                            <textarea name="" id="2wepatk" cols="30" rows="3"></textarea>
+                            <textarea name="" id="3wepatk" cols="30" rows="3"></textarea>
+                        </div>
+                        <div class="dmg-type">
+                            <label for="dmg/type">Damage/Type</label>
+                            <textarea name="" id="1wepdmg" cols="30" rows="3"></textarea>
+                            <textarea name="" id="2wepdmg" cols="30" rows="3"></textarea>
+                            <textarea name="" id="3wepdmg" cols="30" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="equipment">
+                        <textarea name="" id="equipment" cols="30" rows="10"></textarea>
+                        <label for="equipment">Equipment</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="generator_js.js"> </script>
+    </body>
+
+</html>
